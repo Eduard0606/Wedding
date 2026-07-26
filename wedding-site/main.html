@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Данил и Александра</title>
+  </head>
+  <body>
+    <main>
+      <!-- Первый экран -->
+      <section class="hero">
+        <div class="silk"></div>
+        <div class="gold-particles"></div>
+
+        <div class="hero-content">
+          <h1>
+            Даниил
+            <span>&</span>
+            Александра
+          </h1>
+
+          <div class="timer-title">До нашей встречи осталось</div>
+
+          <div class="timer">
+            <div class="time-box">
+              <span id="days">00</span>
+              <small>дней</small>
+            </div>
+
+            <div class="time-box">
+              <span id="hours">00</span>
+              <small>часов</small>
+            </div>
+
+            <div class="time-box">
+              <span id="minutes">00</span>
+              <small>минут</small>
+            </div>
+
+            <div class="time-box">
+              <span id="seconds">00</span>
+              <small>секунд</small>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- История знакомства -->
+      <section class="story">
+        <div class="section-line"></div>
+
+        <h2>Наша история</h2>
+
+        <p>
+          Иногда самые важные встречи происходят совершенно неожиданно. Здесь
+          будет ваша история знакомства, ваши воспоминания и моменты, которые
+          привели нас к этому дню.
+        </p>
+      </section>
+
+      <!-- Приглашение -->
+      <section class="invitation">
+        <div class="section-line"></div>
+
+        <h2>Приглашение</h2>
+
+        <div class="event-card">
+          <p class="event-title">Мы будем рады видеть вас на нашей свадьбе</p>
+
+          <div class="event-info">
+            <div class="info-item">
+              <span> Дата </span>
+
+              <strong> 9 сентября 2026 </strong>
+            </div>
+
+            <div class="info-item">
+              <span> Время </span>
+
+              <strong> 13:40 </strong>
+              <strong style="font-size: 19px; text-decoration: underline;"> роспись в 14:20, просим прибыть на место в 13:40. </strong>
+            </div>
+
+            <div class="info-item">
+              <span> Место </span>
+
+              <strong> ЗАГС Красносносельского района</strong>
+              <p class="address">ул. Доблести 36</p>
+            </div>
+          </div>
+
+          <a class="map-btn" href="#" target="_blank"> Открыть маршрут </a>
+        </div>
+      </section>
+
+      <!-- Анкета гостя -->
+      <section class="guest-form">
+        <div class="section-line"></div>
+
+        <h2>Анкета гостя</h2>
+
+        <p>
+          Нам будет приятно узнать ваши предпочтения, чтобы сделать этот день
+          максимально комфортным.
+        </p>
+
+        <form class="guest-card" id="guestForm">
+          <!-- Имя -->
+
+          <input type="text" name="name" placeholder="Ваше имя" required />
+
+          <!-- Присутствие -->
+
+          <h3>Сможете присутствовать?</h3>
+
+          <div class="choices">
+            <label class="choice">
+              <input type="radio" name="visit" value="Буду" required />
+
+              <span>С удовольствием приду </span>
+            </label>
+
+            <label class="choice">
+              <input type="radio" name="visit" value="Не смогу" />
+
+              <span>К сожалению, не смогу</span>
+            </label>
+          </div>
+
+          <!-- Алкоголь -->
+
+          <h3>Предпочтения по напиткам</h3>
+
+          <div class="choices">
+            <label class="choice">
+              <input type="checkbox" name="alcohol" value="Шампанское" />
+              <span>Шампанское</span>
+            </label>
+
+            <label class="choice">
+              <input type="checkbox" name="alcohol" value="Белое вино" />
+              <span>Белое вино</span>
+            </label>
+
+            <label class="choice">
+              <input type="checkbox" name="alcohol" value="Красное вино" />
+              <span>Красное вино</span>
+            </label>
+
+            <label class="choice">
+              <input type="checkbox" name="alcohol" value="Крепкий алкоголь" />
+              <span>Крепкий алкоголь</span>
+            </label>
+            <label class="choice">
+              <input type="checkbox" name="alcohol" value="Без алкоголя" />
+              <span> Не пью</span>
+            </label>
+          </div>
+
+          <!-- Еда -->
+
+          <h3>Предпочтения по блюдам</h3>
+
+          <div class="choices">
+            <label class="choice">
+              <input type="checkbox" name="food" value="Мясо" />
+              <span> Мясо</span>
+            </label>
+
+            <label class="choice">
+              <input type="checkbox" name="food" value="Рыба" />
+              <span> Рыба</span>
+            </label>
+
+            <label class="choice">
+              <input type="checkbox" name="food" value="Вегетарианское меню" />
+              <span> Вегетарианское меню</span>
+            </label>
+          </div>
+
+          <!-- Комментарий -->
+
+          <h3>Пожелания</h3>
+
+          <textarea
+            name="comment"
+            placeholder="Если есть аллергия, особые предпочтения или пожелания — напишите здесь."
+          ></textarea>
+          <button type="submit" class="submit-btn">Отправить ответ</button>
+        </form>
+      </section>
+
+      <!-- Контакты -->
+      <section class="contacts">
+        <div class="section-line"></div>
+
+        <h2>До встречи</h2>
+
+        <p>Спасибо, что разделите этот важный день вместе с нами</p>
+
+        <div class="contact-list">
+          <div class="contact-item">
+            <span> Даниил </span>
+
+            <a href="tel:+70000000000"> +7 (000) 000-00-00 </a>
+          </div>
+
+          <div class="contact-item">
+            <span> Александра </span>
+
+            <a href="tel:+70000000000"> +7 (000) 000-00-00 </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="popup" id="popup">
+      <div class="popup-content">
+        <button type="button" class="popup-close" id="popupClose">×</button>
+        <h2>Спасибо</h2>
+        <p>Ваш ответ получен.Будем рады видеть вас в этот день.</p>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
